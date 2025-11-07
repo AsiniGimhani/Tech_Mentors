@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses | Tech Mentor</title>
+
+  
+  <style>
+    * {
+      font-family: cursive;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #1abc9c, #16a085);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .header h1 {
+      font-size: 42px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #1abc9c;
+    }
+
+    /* Content */
+    .content {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .content h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #16a085;
+      margin-bottom: 30px;
+    }
+
+    /* Courses Grid */
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .course {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .course:hover {
+      transform: translateY(-5px);
+    }
+
+    .course img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .course h3 {
+      margin-top: 15px;
+      color: #1abc9c;
+      font-size: 22px;
+    }
+
+    .course p {
+      font-size: 15px;
+      color: #555;
+      margin-top: 8px;
+      text-align: justify;
+    }
+
+    .enroll-btn {
+      display: inline-block;
+      margin-top: 12px;
+      background: #1abc9c;
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .enroll-btn:hover {
+      background: #16a085;
+    }
+
+    /* Footer */
+    .footer {
+      background: #1abc9c;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Our Courses</h1>
+    <p>Learn, Grow, and Succeed with Tech Mentor</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="courses.html">Courses</a>
+    <a href="faculties.html">Faculties</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="content">
+    <h2>Popular Courses</h2>
+
+    <div class="course-grid">
+      <div class="course">
+        <img src="Image/web.png" alt="Web Development">
+        <h3>Web Development</h3>
+        <p>Learn how to build responsive, modern websites using HTML, CSS, JavaScript, and backend technologies like PHP and MySQL.</p>
+        <a href="#" class="enroll-btn">Enroll Now</a>
+      </div>
+
+      <div class="course">
+        <img src="Image/data.jpeg" alt="Data Science">
+        <h3>Data Science</h3>
+        <p>Gain skills in data analysis, visualization, and machine learning using Python, Pandas, NumPy, and real-world datasets.</p>
+        <a href="#" class="enroll-btn">Enroll Now</a>
+      </div>
+
+      <div class="course">
+        <img src="Image/mob.png" alt="Mobile App Development">
+        <h3>Mobile App Development</h3>
+        <p>Develop Android and iOS applications using Flutter and React Native while mastering mobile UI/UX principles.</p>
+        <a href="#" class="enroll-btn">Enroll Now</a>
+      </div>
+
+      <div class="course">
+        <img src="Image/ai.jpeg" alt="Artificial Intelligence">
+        <h3>Artificial Intelligence</h3>
+        <p>Understand AI fundamentals, neural networks, and deep learning through practical projects and simulations.</p>
+        <a href="#" class="enroll-btn">Enroll Now</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Tech Mentor Institute | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

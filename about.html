@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Tech Mentor</title>
+
+  
+  <style>
+    * {
+      font-family: cursive;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #1abc9c, #16a085);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .header h1 {
+      font-size: 42px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #1abc9c;
+    }
+
+    /* Content */
+    .content {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .content h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #16a085;
+      margin-bottom: 30px;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-image {
+      flex: 1 1 400px;
+      max-width: 500px;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+      max-width: 500px;
+    }
+
+    .about-text p {
+      font-size: 17px;
+      color: #555;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: justify;
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    .footer {
+      background: #1abc9c;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>About Tech Mentor</h1>
+    <p>Empowering Learners. Building Futures.</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="courses.html">Courses</a>
+    <a href="faculties.html">Faculties</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="content">
+    <h2>Who We Are</h2>
+
+    <div class="about-section">
+      <div class="about-image">
+        <img src="Image/campus.jpeg" alt="Tech Mentor Campus">
+      </div>
+
+      <div class="about-text">
+        <p>
+          Tech Mentor Institute is a premier higher education institute committed to providing top-quality education 
+          and nurturing innovation, critical thinking, and leadership among students. Founded with the vision of 
+          empowering learners, Tech Mentor offers a diverse range of courses designed to meet the demands of the 
+          modern digital world. Our highly qualified faculty members and state-of-the-art campus facilities 
+          ensure a stimulating learning environment for all students. We also collaborate with industry leaders 
+          to create real-world learning opportunities and career pathways.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-section" style="margin-top:40px;">
+      <div class="about-text">
+        <p>
+          At Tech Mentor, we believe education is not just about knowledge, but about building skills, 
+          character, and vision. Our mission is to prepare students to excel academically and professionally, 
+          while fostering creativity, ethical thinking, and social responsibility. Whether you are pursuing 
+          programming, data science, AI, or mobile development, Tech Mentor provides the guidance and resources 
+          you need to succeed.
+        </p>
+      </div>
+
+      <div class="about-image">
+        <img src="Image/students.jpg" alt="Students Learning">
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Tech Mentor Institute | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
